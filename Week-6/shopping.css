@@ -1,0 +1,109 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Verdana, sans-serif;
+}
+
+.layout{
+display:grid;
+grid-template-columns:220px 1fr;
+grid-template-rows:70px 50px 1fr 50px;
+grid-template-areas:
+"header header"
+"menu menu"
+"side content"
+"footer footer";
+height:100vh;
+}
+
+.top{
+grid-area:header;
+background:#1f3c88;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.content{
+grid-area:content;
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+gap:15px;
+padding:20px;
+background:#f8f9fa;
+}
+.web{
+grid-area:content;
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+gap:15px;
+padding:20px;
+background:#f8f9fa;
+}
+
+.product{
+background:white;
+padding:15px;
+border:2px solid #ccc;
+border-radius:5px;
+text-align:center;
+}
+
+.product:hover{
+background:#eaf0ff;
+}
+
+.bottom{
+grid-area:footer;
+background:#1f3c88;
+color:white;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+ nav a:hover{
+    color:rgb(0, 13, 255);
+}
+
+.menu {
+    grid-area: menu;
+    text-align: center;
+    background-color: #1f3d88c1; 
+    color: gainsboro;
+    justify-content: center;
+    align-items: center;
+}
+
+  iframe {
+    grid-area: content;
+    width: 100%;
+    height: 100%;
+  }
+  .buttons {
+    background-color: rgba(42, 119, 187, 0.603);
+    padding: 15px;
+    margin: 10px;
+    border-radius : 12px
+  }
+
+  .buttons:hover {
+    background-color: rgba(42, 119, 187, 0.322);
+
+  }
+/* Responsive design */
+
+@media (max-width:700px){
+
+.layout{
+grid-template-columns:1fr;
+grid-template-areas:
+"header"
+"menu"
+"side"
+"content"
+"footer";
+}
+
+}
