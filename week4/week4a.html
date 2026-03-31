@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 - a</title>
+    <style>
+        table,th,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+            th,td{
+                background-color: bisque;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <h1 align="center" > Admmission Registration</h1>
+    <table align="center" width="500">
+        <tr>
+            <td> <label for="fname">Full Name:</label></td>
+            <td><input id="fname" name="fname" type="text" placeholder="Full Name" required></td>
+
+        </tr>
+        <tr>
+            <td> <label for="email">Email:</label></td>
+            <td><input id="email" name="email" type="text" placeholder="Email"></td>
+
+        </tr>
+        <tr>
+            <td> <label for="phnum">Phone Number:</label></td>
+            <td><input id="phnum" name="phnum" type="text" placeholder="Phone Number"></td>
+            
+        </tr>
+        <tr>
+             <td> <label for="gender">Gender:</label></td>
+            <td><input id="gender" name="gender" type="radio" value="Male" >Male
+            <input id="gender" name="gender" type="radio" value="Female" >Female
+            <input id="gender" name="gender" type="radio" value="Other" >Other</td>
+        </tr>
+        <tr>
+            <td><label for="caf">Course applying for:</label></td>
+            <td><select name="caf" id="caf">
+                <option value="CSE">CSE</option>
+                <option value="CCE">CCE</option>
+                <option value="AIE">AIE</option>
+            </select></td>
+        </tr>
+        <TR>
+            <td><label for="hobby">Hobbies:</label></td>
+            <td><input type="checkbox" value="Sports">Sports
+            <input type="checkbox" id="hobby" name="hobby" value="Music">Music
+            <input type="checkbox" id="hobby" name="hobby"value="Reading">Reading</td>
+        </TR>
+    
+        <tr>
+            <td> <label for="date">Date Of Birth:</label></td>
+            <td><input type="date" id="date " name="date"></td>
+        </tr>
+        <tr>
+            <td><label for="address">Address:</label></td>
+            <td><textarea name="address" id="address" width="100" height="100"></textarea></td>
+
+        </tr>
+        <tr>
+            <td colspan="2" align="center"><input type="submit">
+            <input type="reset"></td>
+
+        </tr>
+        
+
+
+
+    </table>
+    </form>
+    
+</body>
+</html>
